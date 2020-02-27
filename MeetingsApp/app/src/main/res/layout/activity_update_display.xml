@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/meetingTitleUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Meeting Title"
+            android:imeOptions="actionDone"
+            android:inputType="text|textCapSentences|textAutoCorrect"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/locationViewUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Location"
+            android:onClick="chooseLocation"
+            android:padding="20dp"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dateViewUpdate"
+                android:layout_width="181dp"
+                android:layout_height="match_parent"
+                android:ems="9"
+                android:hint="Date"
+                android:padding="20dp"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/timeViewUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Time"
+                android:padding="20dp"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/extraLocationInfoUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Building Name, Room Number, etc."
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapSentences|textAutoCorrect"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/attendeesUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add Attendees"
+            android:textSize="18dp"
+            android:onClick="addPeople"
+            android:padding="20dp" />
+
+
+        <EditText
+            android:id="@+id/summaryUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Summary"
+            android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+            android:padding="20dp" />
+
+
+        <Button
+            android:id="@+id/createMeetingUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:text="Update"
+            android:clickable="true"
+            android:onClick="Update"/>
+
+    </LinearLayout>
+</ScrollView>
